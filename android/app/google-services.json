@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "700443035532",
+    "project_id": "ecommerance-effdb",
+    "storage_bucket": "ecommerance-effdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700443035532:android:b819f592e7dec7eca5f8a9",
+        "android_client_info": {
+          "package_name": "com.example.untitled3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfctDbOiCPR6Cu-rlKbteVCOT1_Bk7czo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
