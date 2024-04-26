@@ -11,20 +11,10 @@ class ProfileScreen extends StatelessWidget {
         children: [
           Expanded(child: Image.asset('assets/images/profile_pic.png')),
           const Text(
-            "Hello Sina!",
+            "Hello Zain Ali!",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset('assets/images/github.png', width: 60),
-              const SizedBox(width: 10),
-              const Text(
-                "https://github.com/SinaSys",
-                style: TextStyle(fontSize: 20),
-              )
-            ],
-          )
+
         ],
       ),
     );

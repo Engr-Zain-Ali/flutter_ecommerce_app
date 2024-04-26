@@ -6,7 +6,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:e_commerce_flutter/src/model/product_category.dart';
 import 'package:e_commerce_flutter/src/model/product_size_type.dart';
 import 'package:e_commerce_flutter/src/model/recommended_product.dart';
-import 'package:e_commerce_flutter/src/model/bottom_navy_bar_item.dart';
+import 'package:e_commerce_flutter/src/model/bottom_nav_bar_item.dart';
 
 class AppData {
   const AppData._();
@@ -33,6 +33,45 @@ class AppData {
       type: ProductType.mobile,
     ),
     Product(
+      name: 'iPhone 13',
+      price: 799,
+      isAvailable: true,
+      off: 180,
+      quantity: 0,
+      images: [
+        'assets/images/iphone_13_1.png',
+      ],
+      isFavorite: false,
+      rating: 4,
+      type: ProductType.mobile,
+    ),
+    Product(
+      name: 'OnePlus 9',
+      price: 699,
+      isAvailable: true,
+      off: 0,
+      quantity: 0,
+      images: [
+        'assets/images/oneplus_9_1.png',
+      ],
+      isFavorite: true,
+      rating: 5,
+      type: ProductType.mobile,
+    ),
+    Product(
+      name: 'Redmi Note 10',
+      price: 249,
+      isAvailable: true,
+      off: 20,
+      quantity: 0,
+      images: [
+        'assets/images/redmi_note_10_1.png',
+      ],
+      isFavorite: true,
+      rating: 4,
+      type: ProductType.mobile,
+    ),
+    Product(
       name: 'Samsung Galaxy Tab S7 FE',
       price: 380,
       isAvailable: false,
@@ -44,6 +83,46 @@ class AppData {
         'assets/images/tab_s7_fe_3.png',
       ],
       isFavorite: false,
+      rating: 4,
+      type: ProductType.tablet,
+    ),
+    Product(
+      name: 'Apple iPad Air (2022)',
+      price: 599,
+      isAvailable: true,
+      off: 0,
+      quantity: 0,
+      images: [
+        'assets/images/ipad_air_2022_1.png',
+
+      ],
+      isFavorite: true,
+      rating: 5,
+      type: ProductType.tablet,
+    ),
+    Product(
+      name: 'Microsoft Surface Go 3',
+      price: 399,
+      isAvailable: true,
+      off: 50,
+      quantity: 0,
+      images: [
+        'assets/images/surface_go_3_1.png',
+      ],
+      isFavorite: true,
+      rating: 4,
+      type: ProductType.tablet,
+    ),
+    Product(
+      name: 'Lenovo Tab P11 Plus',
+      price: 299,
+      isAvailable: true,
+      off: 30,
+      quantity: 0,
+      images: [
+        'assets/images/tab_p11_plus_1.png',
+      ],
+      isFavorite: true,
       rating: 4,
       type: ProductType.tablet,
     ),
@@ -80,6 +159,68 @@ class AppData {
           Categorical(CategoricalType.small, true),
           Categorical(CategoricalType.medium, false),
           Categorical(CategoricalType.large, false),
+        ],
+      ),
+      type: ProductType.watch,
+    ),
+    Product(
+      name: 'Apple Watch Series 7',
+      price: 399,
+      isAvailable: false,
+      off: 0,
+      quantity: 0,
+      images: [
+        'assets/images/apple_watch_series_7_1.png',
+        'assets/images/apple_watch_series_7_2.png',
+        'assets/images/apple_watch_series_7_3.png',
+      ],
+      isFavorite: true,
+      rating: 4,
+      sizes: ProductSizeType(
+        categorical: [
+          Categorical(CategoricalType.small, false),
+          Categorical(CategoricalType.medium, true),
+          Categorical(CategoricalType.large, true),
+        ],
+      ),
+      type: ProductType.watch,
+    ),
+    Product(
+      name: 'Fitbit Versa 3',
+      price: 199,
+      isAvailable: true,
+      off: 50,
+      quantity: 0,
+      images: [
+        'assets/images/fitbit_versa_3_1.png',
+      ],
+      isFavorite: true,
+      rating: 4,
+      sizes: ProductSizeType(
+        categorical: [
+          Categorical(CategoricalType.small, true),
+          Categorical(CategoricalType.medium, true),
+          Categorical(CategoricalType.large, false),
+        ],
+      ),
+      type: ProductType.watch,
+    ),
+    Product(
+      name: 'Garmin Venu 2',
+      price: 349,
+      isAvailable: true,
+      off: 0,
+      quantity: 0,
+      images: [
+        'assets/images/garmin_venu_2_1.png',
+      ],
+      isFavorite: false,
+      rating: 5,
+      sizes: ProductSizeType(
+        categorical: [
+          Categorical(CategoricalType.small, true),
+          Categorical(CategoricalType.medium, true),
+          Categorical(CategoricalType.large, true),
         ],
       ),
       type: ProductType.watch,
@@ -122,6 +263,45 @@ class AppData {
       type: ProductType.headphone,
     ),
     Product(
+      name: 'Sony WH-1000XM4',
+      price: 278,
+      isAvailable: true,
+      off: 72,
+      quantity: 0,
+      images: [
+        'assets/images/sony_wh1000xm4_1.png',
+      ],
+      isFavorite: true,
+      rating: 5,
+      type: ProductType.headphone,
+    ),
+  Product(
+  name: 'Bose QuietComfort Earbuds',
+  price: 279,
+  isAvailable: true,
+  off: 20,
+  quantity: 0,
+  images: [
+  'assets/images/bose_quietcomfort_earbuds_1.png',
+  ],
+  isFavorite: false,
+  rating: 4,
+  type: ProductType.headphone,
+  ),
+  Product(
+  name: 'Sennheiser HD 450BT',
+  price: 149,
+  isAvailable: true,
+  off: 50,
+  quantity: 0,
+  images: [
+  'assets/images/sennheiser_hd_450bt_1.png',
+  ],
+  isFavorite: true,
+  rating: 4,
+  type: ProductType.headphone,
+  ),
+    Product(
       name: 'Samsung Q60 A',
       price: 497,
       isAvailable: true,
@@ -163,6 +343,27 @@ class AppData {
       rating: 2,
       type: ProductType.tv,
     ),
+    Product(
+      name: 'LG C1 OLED',
+      price: 1499,
+      isAvailable: true,
+      off: 0,
+      quantity: 0,
+      images: [
+        'assets/images/lg_c1_oled_1.png',
+      ],
+      isFavorite: true,
+      sizes: ProductSizeType(
+        numerical: [
+          Numerical('55', true),
+          Numerical('65', true),
+          Numerical('77', true),
+        ],
+      ),
+      rating: 5,
+      type: ProductType.tv,
+    ),
+
   ];
 
   static List<ProductCategory> categories = [
